@@ -30,6 +30,6 @@ def config(filename=r'/database.ini', section='postgresql'):
 
         for param in params:
             db[param[0]] = param[1]
-        else:
-            raise Exception("Раздел {0} не найдено в {1} файл".format(section, filename))
+    else:
+        raise Exception("Раздел {0} не найдено в {1} файл".format(section, filename))
     return db
